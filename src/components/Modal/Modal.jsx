@@ -3,19 +3,6 @@ import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import css from './Modal.module.css';
 
-// export const Modal = ({ closeModal, largeImageURL }) => {
-//   useEffect(() => {
-//     const handleKeyDown = e => {
-//       if (e.keyCode === 27 || e.currentTarget === e.target) {
-//         return closeModal();
-//       }
-//     };
-//     window.addEventListener('keydown', handleKeyDown);
-//     return () => {
-//       window.removeEventListener('keydown', handleKeyDown);
-//     };
-//   }, [closeModal]);
-
 export const Modal = ({ src, alt, closeModal }) => {
   useEffect(() => {
     const onEscPress = event => {
